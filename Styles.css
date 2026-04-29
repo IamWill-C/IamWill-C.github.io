@@ -1,6 +1,5 @@
-* {
-    background-color: black;
-    font-family: Helvetica, Arial, sans-serif;
+p, h1, h2 {
+    line-height: 25px
 }
 
 img {
@@ -17,6 +16,7 @@ img {
     padding: 30px;
 }
 
+/*For Mobile View*/
 @media (max-width: 768px) {
     .mobile-nav {
         display: block;
@@ -40,6 +40,7 @@ img {
     top: 200px;
     width: 100%;
     z-index: 15;
+    background-color: black;
     }
 
     .site-top {
@@ -49,7 +50,41 @@ img {
     .social-icon {
         font-size: 50px;
     }
+
+    .grid {
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
 }
+
+/*.contracts {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) !important;
+    width: 100% !important;
+} */
+
+.contracts img {
+    height: 80px;
+    width: 100px !important;
+    object-fit: contain;
+}
+
+.capabilities {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: repeat(6, 1fr) !important;
+    gap: 20px;
+    align-items: start;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+
+}
+}
+
 
 .site-nav {
     width: 100%;
@@ -57,6 +92,7 @@ img {
     top: 0;
     left: 0;
     z-index: 100;
+    background-color: black;
 }
 
 .site-top {
@@ -112,10 +148,6 @@ a {
     transition: background-color 0.3s;
 }
 
-p {
-    color: white;
-}
-
 video {
     height: 400px;
     object-fit: cover;
@@ -130,6 +162,8 @@ video {
 
 body {
     padding-top: 196px;
+    background-color: black;
+    background: linear-gradient(180deg, #1a1a1a, #000000);
 }
 
 hr {
@@ -141,14 +175,38 @@ hr {
     text-transform: uppercase;
 }
 
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
 h1 {
+    font-family: 'Noto Sans';
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
     color: white;
     text-align: center;
 }
 
 h2 {
+    font-family: Helvetica, Arial, sans-serif;
     color: white;
     text-align: center;
+}
+
+.tagline {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+.undertag {
+    letter-spacing: 2px;
+    padding: 10px;
 }
 
 .grid {
@@ -156,8 +214,328 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 10px;
+    align-items: start;
 }
 
 .box {
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 4em;
+    z-index: 5;
+}
+
+.box h1 {
+    font-size: 25px;
+    padding: 20px;
+    font-family: 'Noto Sans';
+    font-weight: bold;
+    text-align: center;
+}
+
+.box p {
+    padding: 20px;
+    font-family: 'Noto Sans';
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+
+.threeC {
+    object-fit: cover;
+    height: 400px;
+    padding: 20px 0px;
+    max-width: 100%;
+}
+
+.slide {
+    flex-direction: row;
+    display: none;
+    position: relative;
+    width: 100%;
+}
+
+.slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.active {
+    display: flex;
+}
+
+.carotext {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.carotext h1 {
+    font-family: 'Noto Sans';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.carotext p {
+    font-family: 'Noto Sans';
+    font-size: 20px;
+}
+
+.contact {
+    padding: 15px 30px;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 0.5em;
+    font-family: 'Noto Sans';
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact:hover {
+    background-color: hsl(0, 0%, 75%);
+    transition: background-color 0.3s;
+}
+
+.carotext p, h1 {
+    padding: 20px;
+}
+
+.carobutton {
+    font-size: 50px;
+    color: white;
+    display: block;
+    background: none;
+    border: none;
+    position: absolute;
+    z-index: 10;
+    padding: 10px;
+}
+
+.carobutton:hover {
+    color: hsl(0, 0%, 39%);
+    transition: color 0.3s;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.contracts {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+}
+
+.contracts img {
+    height: 80px;
+    width: 180px;
+    object-fit: contain;
+}
+
+.capabilities div p {
+    padding: 10px 20px;
+    border: 1px;
+    background-color: rgb(68, 68, 68);
+    border-radius: 1em;
+}
+
+.capabilities div {
+    text-align: center;
+}
+
+.capabilities h1 {
+    height: 40px;
+    padding: 30px;
+}
+
+.capabilities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.capabilities img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    padding: 0px !important;
+}
+
+section {
+    text-align: center;
+}
+
+.services-icons {
+    font-size: 60px;
+    padding: 30px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.service-item h1 {
+    font-size: 20px;
+}
+
+.team-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.team-header img {
+    height: 300px;
+    max-width: 100%;
+    padding: 0;
+    object-fit: cover;
+}
+
+.team-header p {
+    font-size: 20px;
+}
+
+.team-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-text {
+    position: absolute;
+}
+
+.team-body h1, h2, p {
+    text-align: left;
+}
+
+.team-body p {
+    font-family: 'Noto Sans';
+    font-size: 25px;
+    line-height: 40px;
+    padding-bottom: 10px;
+    
+}
+
+.team-body h1 {
+    padding-top: 70px;
+    font-weight: lighter;
+    letter-spacing: .5em;
+}
+
+.beforeteam-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 100px;
+}
+
+.team-icons {
+    font-size: 35px;
+}
+
+.icon-inline {
+    display: flex;
+    align-items: center;
+}
+
+.icon-inline h2 {
+    padding-left: 25px;
+}
+
+.team-items p {
+    padding: 25px 5px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.team-member {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: .5em;
+}
+
+.team-member p {
+    font-style: italic;
+    text-align: center;
+}
+
+.team-member h1 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.team-member h2 {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.team-break {
+    margin: 1em;
+    width: 50%;
+}
+
+.studio-team {
+    text-align: left;
+    padding-top: 70px;
+    font-weight: lighter;
+    letter-spacing: .5em;
+}
+
+.intern-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.intern-team {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: .5em;
+}
+
+.intern-team h2 {
     text-align: center;
 }
