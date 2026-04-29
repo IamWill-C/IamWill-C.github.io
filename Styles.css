@@ -642,6 +642,7 @@ footer {
 
 .intern-team h1 {
     font-size: 25px;
+    text-transform: capitalize;
 }
 
 .intern-team h2 {
