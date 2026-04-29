@@ -6,6 +6,9 @@
     <link rel="icon" type="image/png" href="Images/logo_Small.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
 <title>
@@ -44,9 +47,9 @@
     </video>
 </div>
 <section>
-    <h1>BUILDING TOMORROW – ONE PIXEL AT A TIME</h1>
+    <h1 class="tagline">BUILDING TOMORROW – ONE PIXEL AT A TIME</h1>
     <br>
-    <h2>B SQUARE IS A RAPID PROTOTYPING AND AGILE DEVELOPMENT STUDIO THAT SPECIALIZES IN CREATING UNIQUE AND IMMERSIVE EXPERIENCES AND TECHNICAL SOLUTIONS.</h2>
+    <h2 class="undertag">B SQUARE IS A RAPID PROTOTYPING AND AGILE DEVELOPMENT STUDIO THAT SPECIALIZES IN CREATING UNIQUE AND IMMERSIVE EXPERIENCES AND TECHNICAL SOLUTIONS.</h2>
     <br>
     <div class="grid">
         <div class="box">
@@ -64,69 +67,139 @@
     </div>
 </section>
 <section>
-    <h1>Commitment</h1>
-    <p>Comes from our passion to achieve excellence and to help our team develop their talents</p>
-    <h1>Communication</h1>
-    <p>Is the most important tool at our disposal and we strive to be transparent and open with our team as well as our clients</p>
-    <h1>Community</h1>
-    <p>Is our goal to continue to build relationships with studios and developers locally and around the world</p>
-    <a>Contact Us</a>
+    <div class="carousel">
+        <button class="carobutton prev" onclick="changeSlide(-1)">‹</button>
+        <div class="slide active">
+            <img class="threeC" src="Images/commitment.png">
+            <div class="carotext">
+                <h1>Commitment</h1>
+                <p>Comes from our passion to achieve excellence and to help our team develop their talents</p>
+                <a class="contact" href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img class="threeC" src="Images/communication.png">
+            <div class="carotext">
+                <h1>Communication</h1>
+                <p>Is the most important tool at our disposal and we strive to be transparent and open with our team as well as our clients</p>
+                <a class="contact" href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img class="threeC" src="Images/community.png">
+            <div class="carotext">
+                <h1>Community</h1>
+                <p>Is our goal to continue to build relationships with studios and developers locally and around the world</p>
+                <a class="contact" href="contact.html">Contact Us</a>
+            </div>
+            
+        </div>
+        <button class="carobutton next" onclick="changeSlide(1)">›</button>
+        </div>
 </section>
 <section>
     <h1>Partners</h1>
+    <div class="contracts">
+        <img src="Images/Contracts/AlterXR.png">
+        <img src="Images/Contracts/BrandXR_White.png">
+        <img src="Images/Contracts/C2Technologies_White.png">
+        <img src="Images/Contracts/c3pathways_white.png">
+        <img src="Images/Contracts/CFTG_Logo.png">
+        <img src="Images/Contracts/Electrifly_White.png">
+        <img src="Images/Contracts/Falcons-Beyond.png">
+        <img src="Images/Contracts/Janus.png">
+        <img src="Images/Contracts/M3DTech.png">
+        <img src="Images/Contracts/MaxPro.png">
+        <img src="Images/Contracts/NCS_White.png">
+        <img src="Images/Contracts/ProXRTraining.png">
+        <img src="Images/Contracts/Stillwater.png">
+        <img src="Images/Contracts/Unleash.png">
+        <img src="Images/Contracts/VirtTra.png"> 
+        <img src="Images/Contracts/VRARA_White.png">
+    </div>
     <hr>
 </section>
 <section>
     <h1>Capabilites</h1>
     <hr>
-    <h1>Simulation & Training</h1>
-    <img>
-        <p>Immersive training with digitally simulated environments and scenarios</p>
-    <h1>Networking</h1>
-    <img>
-        <p>Cross-platform environments for education, training, and collaboration on demand</p>
-    <h1>XR / VR / AR</h1>
-    <img>
-        <p>The latest emergent technology, hand-selected to meet your needs</p>
-    <h1>Hardware Integration</h1>
-    <img>
-        <p>Experience realism with integrated hardware & configurable motion platforms</p>
-    <h1>Content Creation</h1>
-    <img>
-        <p>Real-time ready assets, digital twins, and high fidelity renders</p>
-    <h1>Gamification</h1>
-    <img>
-        <p>Gamify new and existing content to enhance retention and engagement</p>
+    <div class="capabilities">
+        <div>
+            <h1>Simulation & Training</h1>
+            <img src="Images/Capabilites/simAndTraining.png">
+            <p>Immersive training with digitally simulated environments and scenarios</p>
+        </div>
+        <div>
+            <h1>Networking</h1>
+            <img src="Images/Capabilites/networking.png">
+            <p>Cross-platform environments for education, training, and collaboration on demand</p>
+        </div>
+        <div>
+            <h1>XR / VR / AR</h1>
+            <img src="Images/Capabilites/xrVrAr.png">
+            <p>The latest emergent technology, hand-selected to meet your needs</p>
+        </div>
+        <div>
+            <h1>Hardware Integration</h1>
+            <img src="Images/Capabilites/hardwareIntegration.png">
+            <p>Experience realism with integrated hardware & configurable motion platforms</p>
+        </div>
+        <div>
+            <h1>Content Creation</h1>
+            <img src="Images/Capabilites/contentCreation.png">
+            <p>Real-time ready assets, digital twins, and high fidelity renders</p>
+        </div>
+        <div>
+            <h1>Gamification</h1>
+            <img src="Images/Capabilites/gamification.png">
+            <p>Gamify new and existing content to enhance retention and engagement</p>
+        </div>
+    </div>
 </section>
 <hr>
 <section>
-    <h1>A SQUARE SERVICES</h1>
+    <h1>B SQUARE SERVICES</h1>
     <h2>Our expertise at your service!</h2>
     <h1>LET'S BUILD YOUR NEXT EXPERIENCE!</h1>
     <p>Contact us to set up a Consultation or Meeting to discuss our Pre-Production services. Our team will analyze and assess a product as well as begin the steps of documenting production and will return with test results within 2 weeks.</p>
-    <a>Contact Us</a>
+    <br>
+    <a class="contact" href="contact.html">Contact Us</a>
 </section>
+<br>
 <hr>
 <section>
-    <img>
-    <h1>Development & IT Support</h1>
-        <p>sing the latest programming standards and conventions, our developers follow strict guidelines to create a proper foundation when we create new experiences. This allows us to create extensible projects that can be supported long-term or effectively handed-off.</p>
-    <img>
-    <h1>Rapid Prototyping</h1>
-        <p>Unsure if an idea is viable? At A Square we love a challenge! With experience with PC, Mobile, and AR / VR devices, we have had the opportunity to work on creative solutions to difficult problems.</p>
-    <img>
-    <h1>App Repair & Quality Assurance</h1>
-        <p>Having an issue with your production? Need help cleaning your codebase? Getting to the root of the problem is our specialty and our team can find solutions. None of our features go untested and neither should yours!</p>
-   <img>
-    <h1>UI / UX Design</h1>
-        <p>Consumers know when a product doesn't "feel" right. Our team has experience pinpointing and redesigning applications to best serve the user's experience.</p>
-    <img>
-    <h1>Product Design</h1>
-        <p>We care about our users! User-centric design principles to add conveyance and polish to every experience. Who is the user? Why are they interacting with our product? These are the questions that provoke creativity through design.</p>
-    <img>
-    <h1>Product Management</h1>
-        <p>Our studio utilizes iterative development, agile, and scrum with in-depth documentation guides for every production. Communication is key, which is why all of our developers and designers practice in-person and remote communication techniques.</p>
-</section>
+    <div class="services">
+        <div class="service-item">
+            <a class="services-icons" href=""><i class="fa-brands fa-dev"></i></a>
+            <h1>Development & IT Support</h1>
+            <p>sing the latest programming standards and conventions, our developers follow strict guidelines to create a proper foundation when we create new experiences. This allows us to create extensible projects that can be supported long-term or effectively handed-off.</p>
+        </div>
+        <div class="service-item">
+            <a class="services-icons" href=""><i class="fa-solid fa-person-running"></i></a>
+            <h1>Rapid Prototyping</h1>
+            <p>Unsure if an idea is viable? At A Square we love a challenge! With experience with PC, Mobile, and AR / VR devices, we have had the opportunity to work on creative solutions to difficult problems.</p>
+        </div>
+        <div class="service-item">
+            <a class="services-icons" href=""><i class="fa-solid fa-bug"></i></i></a>
+            <h1>App Repair & Quality Assurance</h1>
+            <p>Having an issue with your production? Need help cleaning your codebase? Getting to the root of the problem is our specialty and our team can find solutions. None of our features go untested and neither should yours!</p>
+        </div>
+        <div class="service-item">
+            <a class="services-icons" href=""><i class="fa-solid fa-signs-post"></i></a>
+            <h1>UI / UX Design</h1>
+            <p>Consumers know when a product doesn't "feel" right. Our team has experience pinpointing and redesigning applications to best serve the user's experience.</p>
+        </div>
+        <div class="service-item">
+            <a class="services-icons" href=""><i class="fa-solid fa-pen-ruler"></i></a>
+            <h1>Product Design</h1>
+            <p>We care about our users! User-centric design principles to add conveyance and polish to every experience. Who is the user? Why are they interacting with our product? These are the questions that provoke creativity through design.</p>
+        </div>
+        <div class="service-item">
+            <a class="services-icons" href=""><i class="fa-solid fa-cubes"></i></a>
+            <h1>Product Management</h1>
+            <p>Our studio utilizes iterative development, agile, and scrum with in-depth documentation guides for every production. Communication is key, which is why all of our developers and designers practice in-person and remote communication techniques.</p>
+        </div>
+        </div>
+    </section>
 <hr>
 <section>
     <p>At our studio, we deeply value creativity in all forms, which is why we appreciate working with A square because they mirror our passion for innovation. Their team combines technical excellence with a keen eye for design, delivering digital solutions that enhance our workflow and bring our artistic vision to life with precision. 					</p>
