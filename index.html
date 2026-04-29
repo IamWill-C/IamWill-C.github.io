@@ -1,18 +1,21 @@
 <!DOCTYPE html>
+<html>
 <head>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="Styles.css">
     <link rel="icon" type="image/png" href="Images/logo_Small.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
+<body>
 <title>
     The First Page
 </title> 
-<div class="site-top">
+<section class="site-nav">
+    <div class="site-top">
     <div>
         <a href="index.html"><img src="Images/logo.png"></a>
     </div>
+    <button class="mobile-nav" onclick="toggleMenu()">☰</button>
     <div class="social">
         <ul>
             <li class="social-icon"><a href="https://x.com/asquaregames"><i class="fa-brands fa-square-x-twitter"></i></a></li>
@@ -21,9 +24,9 @@
             <li class="social-icon"><a href="https://www.instagram.com/asquaregamesandsim/"><i class="fa-brands fa-square-instagram"></i></a></li>
         </ul>
     </div>
-</div>
-<nav class="nav">
-  <ul>
+    </div>
+    <nav class="nav">
+  <ul class="page-links">
     <li class="nav-link"><a href="index.html">Home</a></li>
     <li class="nav-link"><a href="projects.html">Projects</a></li>
     <li class="nav-link"><a href="services.html">Services</a></li>
@@ -31,8 +34,9 @@
     <li class="nav-link"><a href="contact.html">Contact</a></li>
     <li class="nav-link"><a href="theTeam.html">The Team</a></li>
   </ul>
-</nav>
-<hr>
+    </nav>
+</section>
+<hr class="first-break">
 <div class="video">
     <video autoplay loop muted>
   <source src="Videos/2025_PortfolioShort_compressed.mp4" type="video/mp4">
@@ -153,3 +157,6 @@
     <p>About A Square:</p>
     <p>A Square Games & Simulation (ASGS) is a rapid prototyping, technical solutions and content creation firm that specializes in Unity & Unreal development for simulation & training, AR/VR, and the metaverse. Our work type includes subcontracting for DOD & DHS, working on a myriad of projects ranging from VR training applications & AR SAAS platforms to full-featured simulations for integrated emergency response training for mass casualty events.</p>
 </footer>
+    <script src="script.js"></script>
+<body>
+</html>
