@@ -10,6 +10,55 @@ img {
     padding: 10px;
 }
 
+.mobile-nav {
+    font-size: 30px;
+    color: white;
+    display: none;
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .mobile-nav {
+        display: block;
+        background: none;
+        border: none;
+    }
+
+    .mobile-nav:hover {
+        color: hsla(0, 0%, 40%, 1); 
+        transition: color 0.3s;
+    }
+
+    .nav ul {
+        display: none !important; 
+    }
+
+    .page-links.open {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    z-index: 15;
+    }
+
+    .site-top {
+        flex-wrap: wrap;
+    }
+
+    .social-icon {
+        font-size: 50px;
+    }
+}
+
+.site-nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
 .site-top {
     display: flex;
     justify-content: space-between;
@@ -27,7 +76,7 @@ img {
 }
 
 .social-icon {
-    font-size: 30px;
+    font-size: 40px;
     padding: 10px;
 }
 
@@ -77,6 +126,10 @@ video {
 .video {
     display: flex;
     justify-content: center;
+}
+
+body {
+    padding-top: 196px;
 }
 
 hr {
