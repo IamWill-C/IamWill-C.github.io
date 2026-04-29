@@ -1,3 +1,5 @@
+
+
 p, h1, h2 {
     line-height: 25px
 }
@@ -83,6 +85,12 @@ img {
     grid-template-columns: repeat(1, 1fr) !important;
 
 }
+
+.intern-grid, .team-grid {
+    justify-content: center !important;
+}
+
+
 }
 
 
@@ -363,6 +371,10 @@ h2 {
     border-radius: 1em;
 }
 
+.capabilities p {
+    margin-top: 10px;
+}
+
 .capabilities div {
     text-align: center;
 }
@@ -370,6 +382,7 @@ h2 {
 .capabilities h1 {
     height: 40px;
     padding: 30px;
+    line-height: 30px;
 }
 
 .capabilities {
@@ -378,6 +391,7 @@ h2 {
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
     align-items: start;
+    padding: 20px;
 }
 
 .capabilities img {
@@ -403,6 +417,87 @@ section {
 .service-item h1 {
     font-size: 20px;
 }
+
+.testimonial-slide {
+    max-width: 50%;
+    display: none;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.test-name {
+    text-transform: capitalize;
+    font-weight: bold !important;
+}
+
+.testimonial-slide h1 {
+    padding: 0px;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+.testimonial-slide.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-icon {
+    max-width: 100px;
+}
+
+#testimonial-carousel {
+    background: radial-gradient(circle, #2a2a2a, #000000);
+}
+
+/*Footer*/
+
+footer {
+    background: linear-gradient(180deg, #333333 0%, #000000 100%);
+    border-top: 2px solid #333333;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left, .footer-right {
+    width: 50%;
+}
+
+.footer-left  p, .footer-right p {
+    text-align: left;
+}
+
+.footer-left {
+    padding-right: 150px;
+}
+
+.footer-right {
+    padding-left: 150px;
+}
+
+.footer-left p, .footer-right p {
+    font-family: 'Noto Sans';
+    font-size: 12px;
+}
+
+.footer-bold {
+    font-weight: bold;
+}
+
+.footer-italic {
+    font-style: italic;
+}
+
+.footer-pad {
+    padding-bottom: 30px;
+}
+
+
+/*The Team Page*/
 
 .team-header {
     display: flex;
@@ -442,8 +537,8 @@ section {
     position: absolute;
 }
 
-.team-body h1, h2, p {
-    text-align: left;
+.team-body h1, .team-body h2, .team-body p {
+    text-align: left !important;
 }
 
 .team-body p {
@@ -482,12 +577,15 @@ section {
 
 .team-items p {
     padding: 25px 5px;
+    text-align: left;
 }
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+
 }
 
 .team-member {
@@ -499,11 +597,13 @@ section {
 .team-member p {
     font-style: italic;
     text-align: center;
+    font-size: 14px;
 }
 
 .team-member h1 {
     text-align: center;
     text-transform: capitalize;
+    font-size: 25px;
 }
 
 .team-member h2 {
@@ -526,16 +626,26 @@ section {
 
 .intern-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
 }
 
 .intern-team {
-    padding: 10px;
     border: 2px solid white;
     border-radius: .5em;
 }
 
+.intern-team img {
+    padding: 0px;
+}
+
+.intern-team h1 {
+    font-size: 25px;
+}
+
 .intern-team h2 {
+    font-family: 'Noto Sans';
+    font-weight: bold;
     text-align: center;
 }

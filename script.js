@@ -39,3 +39,20 @@ setInterval(() => {
 
 // Show the first slide on load
 showSlide(currentSlide);
+
+const testimonials = document.querySelectorAll('.testimonial-slide');
+let currentTestimonial = 0;
+
+function showTestimonial(index) {
+    if (index >= testimonials.length) currentTestimonial = 0;
+    if (index < 0) currentTestimonial = testimonials.length - 1;
+    testimonials.forEach(slide => slide.classList.remove('active'));
+    testimonials[currentTestimonial].classList.add('active');
+}
+
+function changeTestimonial(direction) {
+    currentTestimonial += direction;
+    showTestimonial(currentTestimonial);
+}
+
+showTestimonial(currentTestimonial);
