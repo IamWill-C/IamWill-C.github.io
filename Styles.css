@@ -90,6 +90,9 @@ img {
     justify-content: center !important;
 }
 
+.footer-text {
+    font-size: 50% !important;
+}
 
 }
 
@@ -465,6 +468,7 @@ footer {
 
 .footer-left, .footer-right {
     width: 50%;
+    padding-top: 30px;
 }
 
 .footer-left  p, .footer-right p {
@@ -472,11 +476,13 @@ footer {
 }
 
 .footer-left {
-    padding-right: 150px;
+    padding-right: 30px;
+    padding-left: 20px;
 }
 
 .footer-right {
-    padding-left: 150px;
+    padding-left: 30px;
+    padding-right: 20px;
 }
 
 .footer-left p, .footer-right p {
@@ -623,6 +629,8 @@ footer {
     font-weight: lighter;
     letter-spacing: .5em;
 }
+
+/*Intern Section*/
 
 .intern-grid {
     display: grid;
